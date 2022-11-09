@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="users"
+            type="com.aman.basicretrofitapp.models.Users" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@{users.name}"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUserName"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
